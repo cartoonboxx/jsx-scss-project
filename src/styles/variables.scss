@@ -7,7 +7,7 @@
   --color-red-55: #FF1919;
   --color-red-60: #FF3333;
   --color-red-80: #FF9999;
-  --color-red-90: #FFСССС;
+  --color-red-90: #FFCCCC;
   --color-red-95: #FFE5E5;
   --color-red-99: #FFFAFA;
 
@@ -29,7 +29,7 @@
   --color-gray-97: #F7F7F8;
   --color-gray-99: #FCFCFD;
 
-  --border: 1px solid var(--color-black-15);
+  --border: var(--border-width-s) solid var(--color-black-15);
 
   --border-width-l: 4px;
   --border-width-m: 3px;
@@ -44,12 +44,14 @@
 
   --font-family-base: 'Manrope', sans-serif;
 
-  --container-width: #{fluid-to-laptop($container-desktop-width,
-                       $container-laptop-width)};
+  --container-width: #{fluid-to-laptop(
+    $container-desktop-width,
+    $container-laptop-width
+  )};
   --container-padding-x: 16px;
 
   --section-padding-y: #{fluid(75, 40)};
 
-  --transition-duration: .2s;
-  --transition-duration-longer: .4s;
+  --transition-duration: 0.2s;
+  --transition-duration-longer: 0.4s;
 }
